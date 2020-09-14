@@ -1,0 +1,93 @@
+:root {
+    --white-color : #fff;
+    --black-color : #000;
+    --text-color : #333;
+}
+
+* {
+   box-sizing: inherit;
+}
+
+html {
+    /* 10 px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.grid {
+    width: 1210px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__ful-width{
+    width : 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top : 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.1s;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal__body {
+    margin: auto;
+    /* width: 300px;
+    height: 300px; */
+    --growth-from: 0.5;
+    --growth-to: 1;
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.3s;
+   
+}
+
+.btn.btn--disabled {
+    color: #ccc;
+    cursor: default;
+    background: #999;
+}
