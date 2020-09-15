@@ -2,6 +2,9 @@
     --white-color : #fff;
     --black-color : #000;
     --text-color : #333;
+    --primary-color : #ee4d2d;
+    --border-color : #dbdbdb;
+    --start-gold-color: #ffce3e;
 }
 
 * {
@@ -21,7 +24,7 @@ body {
     padding: 0;
 }
 .grid {
-    width: 1210px;
+    width: 1300px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -33,8 +36,25 @@ body {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
 }
-
+/* Test */
+.grid__column-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+.grid__column-3-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+.grid__column-9 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 75%;
+}
 /* Animation */
 
 @keyframes fadeIn {
@@ -91,3 +111,65 @@ body {
     cursor: default;
     background: #999;
 }
+/* Selection */
+
+.select-input {
+    min-width: 200px;
+    padding: 0 12px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+}
+.select-input::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: 33px;
+    /* background-color: red; */
+}
+.select-input__label {
+    font-size: 1.4rem;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: rgb(131,131,131);
+    position: relative;
+    top: 1px;
+  }
+  
+  .selcet-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px; 
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 12px;
+    list-style: none;
+    display: none;
+  }
+
+  .select-input__link {
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: var(--text-color);
+      display: block;
+      padding: 4px 0;
+  }
+
+  .select-input__link:hover {
+      color: tomato;
+  }
+
+  .select-input:hover .selcet-input__list {
+      display: block;
+  }

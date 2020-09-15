@@ -19,7 +19,7 @@
             <li class="header__navbar-user-item">
               <a href="">Đơn Mua</a>
             </li>
-            <li class="header__navbar-user-item">
+            <li class="header__navbar-user-item header__navbar-user-item--separate">
               <a href="">Đăng Xuất</a>
             </li>
           </ul>
@@ -64,8 +64,8 @@
                     <div class="header__cart-item-body">
                       <span class="header__cart-item-species">Phân Loại : Classic</span>
                       <span class="header__cart-item-delete">Xóa</span>
-
                     </div>
+                   
                   </div>
                 </li>
                 <li class="header__cart-item">
@@ -105,6 +105,9 @@
                   </div>
                 </li>
               </ul>
+              <div class="header__cart-item-footer">
+                        <span class="header__cart-item-total">Tổng Phụ : 2,225,000 đ</span>
+                    </div>
               <a class="header__cart-view-cart">Xem Giỏ Hàng</a>
               <a class="header__cart-checkout  ">Thanh Toán</a>
             </div>
