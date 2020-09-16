@@ -27,7 +27,7 @@
       </ul>
       <ul>
         <li class="header__navbar-item">
-          <a href=""> <img width="180" height="60" src="logo-mona.png" alt="" /></a>
+          <a href=""> <img width="180" height="60" src="logo-mona.png" id="navbar-user-img"  alt="" /></a>
         </li>
       </ul>
       <ul class="header__navbar-list ">
@@ -103,7 +103,9 @@
 
                     </div>
                   </div>
+                  
                 </li>
+                
               </ul>
               <div class="header__cart-item-footer">
                         <span class="header__cart-item-total">Tổng Phụ : 2,225,000 đ</span>
@@ -111,6 +113,7 @@
               <a class="header__cart-view-cart">Xem Giỏ Hàng</a>
               <a class="header__cart-checkout  ">Thanh Toán</a>
             </div>
+            
           </div>
         </li>
       </ul>
