@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="base.css" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-  <title>Document</title>
-</head>
-
-<body>
-  <div class="app">
-    <header class="header" id="header">
-      <?php include "header.php" ?>
-    </header>
-    <div class="banner">
-      
-    </div>
-    <?php include "content.php"?>
-    <?php include "footer.php" ?>
-  </div>
-
+<?php include "header.php" ?>
+<?php include "content.php"?>
+<?php include "footer.php" ?>
   <!-- Modal -->
   <!-- <div class="modal">
     <div class="modal__overlay">
@@ -117,24 +94,4 @@
         </div>
     </div>
   </div> -->
-  <script>
-    window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar-user-img").style.width = "138px";
-    document.getElementById("navbar-user-img").style.height = "45px";
-    document.getElementById("header").style.transform = "translateY(-100%)";
-    // document.getElementById("header").style.transform = "translateY(0%)";
-    document.getElementById("header").style.transition = "transform ease-in 0.5s";
-  } else {
-    document.getElementById("navbar-user-img").style.width = "180px";
-    document.getElementById("navbar-user-img").style.height = "60px";
-    document.getElementById("header").style.transform = "translateY(0%)";
-    
-  }
-}
-  </script>
-</body>
-
-</html>
+ 

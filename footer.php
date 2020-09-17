@@ -97,3 +97,43 @@
             </div>
         </div>
     </footer>
+    </div>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar-user-img").style.width = "138px";
+    document.getElementById("navbar-user-img").style.height = "45px";
+    document.getElementById("header").style.transform = "translateY(-100%)";
+    document.getElementById("header").style.transition = "transform ease-in 0.5s";
+  } else {
+    document.getElementById("navbar-user-img").style.width = "180px";
+    document.getElementById("navbar-user-img").style.height = "60px";
+    document.getElementById("header").style.transform = "translateY(0%)";
+  }
+}
+
+// var slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("dot");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";  
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {slideIndex = 1}    
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " active";
+//   setTimeout(showSlides, 3000); // Change image every 2 seconds
+// }
+  </script>
+</body>
+
+</html>
