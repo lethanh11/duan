@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+
+<body>
+<div class="app">
+<header class="header" id="header">
+<div class="grid">
+  <div class="header-top">
+    <nav class="header__navbar">
+      <ul class="header__navbar-list">
+        <!-- <li class="header__navbar-item ">
+          <a href="" class="header__navbar-item-link"> ĐĂNG NHẬP / ĐĂNG KÝ </a>
+        </li> -->
+        <li class="header__navbar-item header__navbar-user">
+          <img src="https://scontent.fdad3-1.fna.fbcdn.net/v/t1.0-1/cp0/p80x80/82081289_754571055024199_2525229642340630528_n.jpg?_nc_cat=103&_nc_sid=7206a8&_nc_ohc=u0-ksiVxtFwAX9HDjYL&_nc_ht=scontent.fdad3-1.fna&oh=15ec43dda9ace9935c8907fd93977022&oe=5F83B968" alt="" class="header__navbar-user-img">
+          <a href="" class="header__navbar-user-name">Lê Thạnh</a>
+
+          <ul class="header__navbar-user-menu">
+            <li class="header__navbar-user-item">
+              <a href="">Tài Khoản của tôi</a>
+            </li>
+            <li class="header__navbar-user-item">
+              <a href="">Địa chỉ của tôi</a>
+            </li>
+            <li class="header__navbar-user-item">
+              <a href="">Đơn Mua</a>
+            </li>
+            <li class="header__navbar-user-item header__navbar-user-item--separate">
+              <a href="">Đăng Xuất</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li class="header__navbar-item">
+          <a href=""> <img width="180" height="60" src="images/logo-mona.png" id="navbar-user-img"  alt="" /></a>
+        </li>
+      </ul>
+      <ul class="header__navbar-list ">
+        <li class="header__navbar-item header__navbar-item--search header__navbar-item--separate ">
+          <a href="" class="header__navbar-item-link"> <i class="fas fa-search"></i></a>
+          <!-- /* Header Search code */ -->
+          <div class="header__search">
+            <input type="text" class="header__text" placeholder="Tìm Kiếm...">
+            <div class="header__logo">
+              <button type="submit" class="header__item"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </li>
+        <li class="header__navbar-item ">
+          <div class="header__cart">
+            <a href="" class="header__navbar-item-link">GIỎ HÀNG / 0 ₫ &nbsp; <i class="fas fa-shopping-cart"></i></a>
+            <span class="header__cart-notice">3</span>
+            <!-- No cart: header_cart-list--no-cart -->
+            <div class="header_cart--list header__cart-list--no-cart">
+              <img src="images/empty-cart.png" class="header__cart-no-cart-img" alt="">
+              <!-- <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span> -->
+              <ul class="header__cart-list-item">
+                <li class="header__cart-item">
+                  <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-3-300x225.jpg" alt="" class="header__cart-img">
+                  <div class="header__cart-item-infor">
+                    <div class="header__cart-item-head">
+                      <h4 class="header__cart-item-name">Chuck Taylor Classic</h4>
+                      <div class="header__cart-item-price-wrap">
+                        <span class="header__cart-item-price">2.000.000đ</span>
+                        <span class="header__cart-item-multiply">x</span>
+                        <span class="header__cart-item-quantity">2</span>
+                      </div>
+                    </div>
+                    <div class="header__cart-item-body">
+                      <span class="header__cart-item-species">Phân Loại : Classic</span>
+                      <span class="header__cart-item-delete">Xóa</span>
+                    </div>
+                   
+                  </div>
+                </li>
+                <li class="header__cart-item">
+                  <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-3-300x225.jpg" alt="" class="header__cart-img">
+                  <div class="header__cart-item-infor">
+                    <div class="header__cart-item-head">
+                      <h4 class="header__cart-item-name">Chuck Taylor Classic</h4>
+                      <div class="header__cart-item-price-wrap">
+                        <span class="header__cart-item-price">2.000.000đ</span>
+                        <span class="header__cart-item-multiply">x</span>
+                        <span class="header__cart-item-quantity">2</span>
+                      </div>
+                    </div>
+                    <div class="header__cart-item-body">
+                      <span class="header__cart-item-species">Phân Loại : Classic</span>
+                      <span class="header__cart-item-delete">Xóa</span>
+
+                    </div>
+                  </div>
+                </li>
+                <li class="header__cart-item">
+                  <img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-3-300x225.jpg" alt="" class="header__cart-img">
+                  <div class="header__cart-item-infor">
+                    <div class="header__cart-item-head">
+                      <h4 class="header__cart-item-name">Chuck Taylor Classic</h4>
+                      <div class="header__cart-item-price-wrap">
+                        <span class="header__cart-item-price">2.000.000đ</span>
+                        <span class="header__cart-item-multiply">x</span>
+                        <span class="header__cart-item-quantity">2</span>
+                      </div>
+                    </div>
+                    <div class="header__cart-item-body">
+                      <span class="header__cart-item-species">Phân Loại : Classic</span>
+                      <span class="header__cart-item-delete">Xóa</span>
+
+                    </div>
+                  </div>
+                  
+                </li>
+                
+              </ul>
+              <div class="header__cart-item-footer">
+                        <span class="header__cart-item-total">Tổng Phụ : 2,225,000 đ</span>
+                    </div>
+              <a class="header__cart-view-cart">Xem Giỏ Hàng</a>
+              <a class="header__cart-checkout  ">Thanh Toán</a>
+            </div>
+            
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="header-bottom">
+  <nav class="header__navbar-bottom">
+    <ul class="menu-list">
+      <li class="menu-list__item active"><a class="border" href="index.html">trang chủ</a></li>
+      <li class="menu-list__item "><a class="border" href="product.html">Sản Phẩm</a></li>
+      <li class="menu-list__item menu-list__item-women ">
+        <a class="border" href="#"> nữ <i class="far fa-angle-down"></i></a>
+        <ul class="menu-list menu-list--women">
+          <li class="menu-list__item--women"><a href="">Classic</a> </li>
+          <li class="menu-list__item--women"><a href="">Sunbaked</a></li>
+          <li class="menu-list__item--women"><a href="">Chuck 07s</a> </li>
+          <li class="menu-list__item--women"><a href="">One Star</a> </li>
+          <li class="menu-list__item--women"><a href="">PSY-Kicks</a> </li>
+        </ul>
+      </li>
+      <li class="menu-list__item menu-list__item-man">
+        <a class="border" href="#">nam <i class="far fa-angle-down"></i></a>
+        <ul class="menu-list menu-list--man">
+          <li class="menu-list__item--man"><a href="">Classic</a></li>
+          <li class="menu-list__item--man"><a href="">Sunbaked</a></li>
+          <li class="menu-list__item--man"><a href="">Chuck 07s</a></li>
+          <li class="menu-list__item--man"><a href="">One Star</a></li>
+          <li class="menu-list__item--man"><a href="">PSY-Kicks</a></li>
+        </ul>
+      </li>
+      <!-- <li class="menu-list__item"><a class="border" href="#">trẻ em</a></li>
+      <li class="menu-list__item"><a class="border" href="#">phụ kiện khác</a></li> -->
+      <!-- <li class="menu-list__item"><a class="border" href="#">tin tức</a></li> -->
+      <li class="menu-list__item"><a class="border" href="#">liên hệ</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+<div class="grid">
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/slide-1.png" style="width:100%" class="banner-img">
+      <div class="text-box">
+        <div class="text text-left">
+          <h1>
+            MONA SNE<i class="far fa-star"></i>KER
+          </h1>
+        </div>
+        <div class="text text-right">
+          <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây,
+            mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm,
+            và đang không ngừng phát triển lớn mạnh.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/slide-2.jpg" style="width:100%" class="banner-img">
+      <div class="text-box">
+        <div class="text text-slide-2">
+          <h1 class="text-heading">
+            MONA SNE<i class="far fa-star"></i>KER
+          </h1>
+          <p class="text-description">Chào mừng bạn đến với ngôi nhà Converse! Tại đây,
+            mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm,
+            và đang không ngừng phát triển lớn mạnh.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/slide-3.jpg" style="width:100%" class="banner-img">
+      <div class="text-box">
+        <div class="text text-slide-3">
+          <h1 class="text-heading">
+            MONA SNE<i class="far fa-star"></i>KER
+          </h1>
+          <p class="text-description">Chào mừng bạn đến với ngôi nhà Converse! Tại đây,
+            mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm,
+            và đang không ngừng phát triển lớn mạnh.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <div class="text-box">
+    <div style="text-align:center" class="text-icon">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  <div class="banner-product">
+    <div class="grid__row product__row">
+      <div class="grid__row-3-3">
+        <div class="product-title">
+          <a href="index.php">
+            <div class="img-inner">
+              <img src="images/title.png" width="174" height="62" alt="" class="original">
+            </div>
+          </a>
+          <div class="product-title-list">
+            <div class="product-title-item">
+              <img src="images/product-titile-1.jpg" alt="">
+            </div>
+          </div>
+          <div class="see-product">
+            <a href="" class="see-product-link">Xem sản phẩm</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__row-3-3">
+        <div class="product-title">
+          <a href="index.php">
+            <div class="img-inner">
+              <img src="images/title.png" width="174" height="62" alt="" class="original">
+            </div>
+          </a>
+          <div class="product-title-list">
+            <div class="product-title-item">
+              <img src="images/product-title-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="see-product see-product-2">
+            <a href="" class="see-product-link">Xem sản phẩm</a>
+          </div>
+        </div>
+      </div>
+      <div class="grid__row-3-3">
+        <div class="product-title ">
+          <a href="index.php">
+            <div class="img-inner">
+              <img src="images/title.png" width="174" height="62" alt="" class="original">
+            </div>
+          </a>
+          <div class="product-title-list">
+            <div class="product-title-item">
+              <img src="images/product-title-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="see-product see-product-3 ">
+            <a href="" class="see-product-link">Xem sản phẩm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-content">
+    <div class="content">
+      <ul class="content-menu">
+        <li class="content-menu-link"> 
+        <a href="" class="btn btn--link ">SẢN PHẨM MỚI</a>
+        </li>
+        <li class="content-menu-link"> 
+        <a href="" class="btn  btn--link ">SẢN PHẨM BÁN CHẠY</a>
+        </li>
+        <li class="content-menu-link"> 
+        <a href="" class="btn  btn--link ">SẢN PHẨM PHỔ BIẾN</a>
+        </li>
+      </ul>
+      <div class="home-content">  
+        <div class="grid__row">
+        <div class="grid__column-3-4 relative">
+          <div class="home-content-product">
+            <a href="" class="content-product-link">
+              <div class="content-img-list">
+              <img src="images/women-classic-5.jpg" class="content-img-item" alt="">
+              </div>
+              <h4 class="content-product-item__name">Chuck 70 Archive Prints Hi</h4>
+              <div class="content-product-item__price">
+              <span class="content-product-item__price-current">900.000đ</span>
+              </div>
+              <div class="content-product-item__origin">
+                <a href="" class="content-product-item__origin-cart btn btn--primary">Thêm giỏ hàng</a>
+              </div>           
+            </a>    
+          </div>
+        </div>
+        <div class="grid__column-3-4">
+          <div class="home-content-product">
+            <a href="" class="content-product-link">
+              <div class="content-img-list">
+              <img src="images/women-classic-5.jpg" class="content-img-item" alt="">
+              </div>
+              <h4 class="content-product-item__name">Chuck 70 Archive Prints Hi</h4>
+              <div class="content-product-item__price">
+              <span class="content-product-item__price-current">900.000đ</span>
+              </div>
+              <div class="content-product-item__origin">
+                <a href="" class="content-product-item__origin-cart btn btn--primary">Thêm giỏ hàng</a>
+              </div>
+            </a>
+            <!-- <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">NEW</span>
+                    <span class="home-product-item__sale-off-label">NEW</span>
+                  </div> -->
+          </div>
+        </div>
+        <div class="grid__column-3-4">
+          <div class="home-content-product">
+            <a href="" class="content-product-link">
+              <div class="content-img-list">
+              <img src="images/women-classic-5.jpg" class="content-img-item" alt="">
+              </div>
+              <h4 class="content-product-item__name">Chuck 70 Archive Prints Hi</h4>
+              <div class="content-product-item__price">
+              <span class="content-product-item__price-current">900.000đ</span>
+              </div>
+              <div class="content-product-item__origin">
+                <a href="" class="content-product-item__origin-cart btn btn--primary">Thêm giỏ hàng</a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="grid__column-3-4">
+          <div class="home-content-product">
+            <a href="" class="content-product-link">
+              <div class="content-img-list">
+              <img src="images/women-classic-5.jpg" class="content-img-item" alt="">
+              </div>
+              <h4 class="content-product-item__name">Chuck 70 Archive Prints Hi</h4>
+              <div class="content-product-item__price">
+              <span class="content-product-item__price-current">900.000đ</span>
+              </div>
+              <div class="content-product-item__origin">
+                <a href="" class="content-product-item__origin-cart btn btn--primary">Thêm giỏ hàng</a>
+              </div>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <ul class="content-menu">
+        <li class="content-menu-link"> 
+        <a href="" class="btn btn--link btn-sale">SẢN PHẨM GIẢM GIÁ</a>
+        </li> 
+      </ul>
+      <div class="home-content">  
+        <div class="grid__row">
+        <div class="grid__column-3-4">
+              <div class="home-content-product">
+                <a href="index.php" class="home-procut-item-link">
+                  <div class="home-product-item__img">
+                    <img src="sale/sale-off-1.jpg" width="100%" height="100%" alt="">
+                  </div>
+                  <h4 class="content-product-item__name">Chuck 70 Archive Prints Hi</h4>
+              <div class="content-product-item__price">
+              <span class="home-product-item__price-old">1.200.000đ</span>
+              <span class="content-product-item__price-current">900.000đ</span>
+              </div>
+              <div class="content-product-item__origin">
+                <a href="" class="content-product-item__origin-cart btn btn--primary">Thêm giỏ hàng</a>
+              </div>
+                 
+                  <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">43%</span>
+                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                  </div>
+                </a>
+              </div>
+        </div>
+        <div class="grid__column-3-4">
+              <div class="home-content-product">
+                <a href="#" class="home-procut-item-link">
+                  <div class="home-product-item__img">
+                    <img src="sale/sale-off-2.jpg" width="100%" height="100%" alt="">
+                  </div>
+                  <h4 class="content-product-item__name">Chuck 70 Archive Prints Hi</h4>
+              <div class="content-product-item__price">
+              <span class="home-product-item__price-old">1.200.000đ</span>
+              <span class="content-product-item__price-current">900.000đ</span>
+              </div>
+              <div class="content-product-item__origin">
+                <a href="" class="content-product-item__origin-cart btn btn--primary">Thêm giỏ hàng</a>
+              </div>
+                 
+                  <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">43%</span>
+                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                  </div>
+                </a>
+              </div>
+        </div>
+        <div class="grid__column-3-4">
+              <div class="home-content-product">
+                <a href="#" class="home-procut-item-link">
+                  <div class="home-product-item__img">
+                    <img src="sale/sale-off-3.jpg" width="100%" height="100%" alt="">
+                  </div>
+                  <h4 class="content-product-item__name">Chuck 70 Archive Prints Hi</h4>
+              <div class="content-product-item__price">
+              <span class="home-product-item__price-old">1.200.000đ</span>
+              <span class="content-product-item__price-current">900.000đ</span>
+              </div>
+              <div class="content-product-item__origin">
+                <a href="" class="content-product-item__origin-cart btn btn--primary">Thêm giỏ hàng</a>
+              </div>
+                 
+                  <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">43%</span>
+                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                  </div>
+                </a>
+              </div>
+        </div>
+        <div class="grid__column-3-4">
+              <div class="home-content-product">
+                <a href="#" class="home-procut-item-link">
+                  <div class="home-product-item__img">
+                    <img src="sale/sale-off-4.jpg" width="100%" height="100%" alt="">
+                  </div>
+                  <h4 class="content-product-item__name">Chuck 70 Archive Prints Hi</h4>
+              <div class="content-product-item__price">
+              <span class="home-product-item__price-old">1.200.000đ</span>
+              <span class="content-product-item__price-current">900.000đ</span>
+              </div>
+              <div class="content-product-item__origin">
+                <a href="" class="content-product-item__origin-cart btn btn--primary">Thêm giỏ hàng</a>
+              </div>
+                 
+                  <div class="home-product-item__sale-off">
+                    <span class="home-product-item__sale-off-percent">43%</span>
+                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                  </div>
+                </a>
+              </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" dots", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " dots";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+<footer class="footer">
+      <div class="grid">
+        <div class="grid__row">
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Mona Mail</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Giới thiệu</h3>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Giới thiệu</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Tuyển dụng</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">Điều khoản</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Địa chỉ</h3>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-item__link"><i class="footer-item__icon fas fa-map-marker-alt"></i>28 Nguyễn tri phương , Thành phố huế</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link"><i class="footer-item__icon fas fa-phone"></i>0905834288</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link"><i class="footer-item__icon far fa-envelope"></i>lethanh110700@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Mạng xã hội</h3>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-item__link">
+                  <i class="footer-item__icon fab fa-facebook"></i>
+                  Facebook
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">
+                  <i class="footer-item__icon fab fa-instagram"></i>
+                  Instagram
+                </a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-item__link">
+                  <i class="footer-item__icon fab fa-twitter"></i>
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">ứng dụng</h3>
+            <div class="footer__download">
+              <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/f184c0b68a2d385feb5d70a76396230b.png" alt="Download QR" class="footer__download-qr">
+              <div class="footer__download-apps">
+                <a href="" class="footer__download-app-link">
+              <!-- <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/2679f513b5f9e235adf2c6c288617e7b.png" alt="" class="footer__download-app-icon"> -->
+              <i class="fab fa-google-play footer-download-app-gg"></i>
+              Google Play
+              </a>
+              <a href="" class="footer__download-app-link">
+              <i class="fab fa-apple footer-download-app-apple"></i> 
+              App Store
+              </a>
+               
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="footer__bottom">
+            <div class="grid">
+            <p class="footer__text">© 2020 - Bản quyền thuộc về Công ty Mona Media</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar-user-img").style.width = "138px";
+    document.getElementById("navbar-user-img").style.height = "45px";
+    document.getElementById("header").style.transform = "translateY(-100%)";
+    document.getElementById("header").style.transition = "transform ease-in 0.5s";
+  } else {
+    document.getElementById("navbar-user-img").style.width = "180px";
+    document.getElementById("navbar-user-img").style.height = "60px";
+    document.getElementById("header").style.transform = "translateY(0%)";
+  }
+}
+
+
+  </script>
+</body>
+
+</html>
